@@ -1,0 +1,163 @@
+  /* Header styles */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 83%, 1);
+  }
+
+  .logo {
+    font-size: 18px;
+    padding-left: 20px;
+    font-style: normal;
+  }
+
+.home-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Initial background color with transparency */
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Transition effect for changing transparency */
+    color: green;
+  }
+  
+  .home-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .home-header ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .home-header ul li a {
+    color: green;
+  }
+  
+  /* Product Cards */
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px; /* Adjust the margin here to bring the cards closer */
+    width: 300px;
+    background-color: #fff; /* Change background color as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a box shadow for depth */
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333; /* Change font color as needed */
+  }
+  
+  .product-card p {
+    color: #666; /* Change font color as needed */
+    margin-bottom: 15px;
+  }
+  
+  .product-card button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card button:hover {
+    background-color: #555;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    padding: 20px;
+    background-color: #f9f9f9; /* Change background color as needed */
+  }
+  
+  .why-choose-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .reasons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .reason-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    background-color: #fff; /* Change background color as needed */
+    margin: 10px;
+  }
+  
+  .reason-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333; /* Change font color as needed */
+  }
+  
+  .reason-card p {
+    color: #666; /* Change font color as needed */
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 20px;
+    background-color: #fff; /* Set FAQ section background to white */
+  }
+  
+  .faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Accordion Styles */
+  .accordion-toggle {
+    display: none;
+  }
+  
+  .accordion-btn {
+    display: block;
+    background-color: #e0e0e0; /* Change the background color for questions */
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff; /* Set answer background to white */
+  }
+  
+  .accordion-toggle:checked + .accordion-btn + .accordion-content {
+    display: block;
+  }
