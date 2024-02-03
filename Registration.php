@@ -21,14 +21,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles1.css">
+  <script src="js/validation.js"></script>
 </head>
 <body>
-    <h1>Registration</h1>
+  <main>
+    <section class="register-form">
+        <h1>Register</h1>
+  <?php include('header.php'); ?>
     <form method="post" action="registration.php">
         Username: <input type="text" name="username" required><br>
         Email: <input type="email" name="email" required><br>
         Password: <input type="password" name="password" required><br>
         <input type="submit" value="Register">
     </form>
+</section>
+</main>
 </body>
 </html>
